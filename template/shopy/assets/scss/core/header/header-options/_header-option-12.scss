@@ -1,0 +1,170 @@
+.main-header-12 {
+	@include media-breakpoint-up(xxl) {
+		.container-fluid {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+	}
+
+	// Header Top
+	.header-top {
+		background: var(--#{$prefix}black);
+		padding: 6px 0;
+		p {
+			color: var(--#{$prefix}white);
+			margin: 0;
+			font-size: 14px;
+		}
+		a {
+			color: var(--#{$prefix}white);
+			text-decoration: none;
+			position: relative;
+			margin-left: 10px;;
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: auto;
+				width: 100%;
+				height: 1px;
+				transition: ease all 0.35s;
+				background: currentColor;
+			}
+			&:hover {
+				left: auto;
+				right: 0;
+				width: 0;
+			}
+		}
+	}
+
+
+	.navbar-expand {
+        @each $breakpoint in map-keys($grid-breakpoints) {
+            $next: breakpoint-next($breakpoint, $grid-breakpoints);
+            $infix: breakpoint-infix($next, $grid-breakpoints);
+            // stylelint-disable-next-line scss/selector-no-union-class-name
+            &#{$infix} {
+            	@include media-breakpoint-down($next) {
+            		padding-top: 10px;
+            		padding-bottom: 10px;
+            	}
+                @include media-breakpoint-up($next) {
+                    .navbar-nav {
+                        >.nav-item {
+                            >.nav-link {
+                                line-height: $px-header-link-height-60;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+	.header-right {
+		display: flex;
+		justify-content: flex-end;
+		.h-col {
+			+ .h-col {
+				margin-left: 10px;
+			} 
+		}
+		.h-icon {
+			font-size: 1.5rem;
+			color: var(--#{$prefix}text-mode);
+		    width: 40px;
+		    height: 40px;
+		    display: inline-flex;
+		    align-items: center;
+		    justify-content: center;
+		    position: relative;
+		    border: none;
+		    sup {
+	    	    position: absolute;
+			    min-width: 20px;
+			    height: 20px;
+			    top: -2px;
+			    right: -2px;
+			    margin: 0;
+			    display: inline-flex;
+			    align-items: center;
+			    justify-content: center;
+			    background: var(--#{$prefix}bg-mode);
+			    color: var(--#{$prefix}text-mode-re);
+			    font-size: 0.7rem;
+			    border-radius: 50%;
+		    }
+		}
+		.dropdown-toggle {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.navbar-nav {
+		> .nav-item {
+			> .nav-link {
+				font-weight: $px-header-font-weight;
+				text-transform: $px-header-link-transform;
+				font-size: $px-header-link-font-size;
+				--bs-navbar-nav-link-padding-x:0.6rem;
+			}
+			@include mob_menu_icon();
+		}
+	}
+}
+
+.header-02-search-offcanvas {
+	--bs-offcanvas-height: 200px;
+	label {
+		font-size: 13px;
+	}
+	.btn-close {
+		font-size: 13px;
+	}
+	.form-group {
+		margin-top: 30px;
+		position: relative;
+	}
+	.form-control {
+		font-size: 20px;
+	}
+	.search-btn {
+		position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    background: none;
+	    border: none;
+	    top: 0;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    width: 50px;
+	    font-size: 20px;
+	    opacity: 0.5;
+	    color: var(--#{$prefix}text-mode);
+	}
+}
+
+// Mobile Header Search
+.mobile-menu-search {
+	position: relative;
+	.search-btn {
+		position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    background: none;
+	    border: none;
+	    top: 0;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    width: 50px;
+	    font-size: 20px;
+	    opacity: 0.5;
+	}
+}

@@ -1,24 +1,5 @@
 <!doctype html>
 <html lang="zxx">
-<head>
-    <!-- metas -->
-    <meta charset="utf-8">
-    <meta name="author" content="pxdraft">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <meta name="keywords" content="Shopy - eCommerce Bootstrap 5 Template">
-    <meta name="description" content="Shopy - eCommerce Bootstrap 5 Template">
-    <!-- title -->
-    <title>Shopy - eCommerce Bootstrap 5 Template</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="https://www.pxdraft.com/demo/shopy/assets/img/favicon.ico">
-    <!-- CSS Template -->
-    <link href="../../assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="/template/shopy/partials/header/_header-04.html">
-    <link rel="stylesheet" href="/template/shopy/partials/_skippy.html">
-    <link rel="stylesheet" href="/template/shopy/partials/_all-popups.html">
-    <a href="/template/shopy/partials/header/_header-04.html"></a>
- </head>
 <body>
     <!-- Skippy & Prload -->
    <?php

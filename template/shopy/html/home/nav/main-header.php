@@ -1,3 +1,22 @@
+<head>
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="pxdraft">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="keywords" content="Shopy - eCommerce Bootstrap 5 Template">
+    <meta name="description" content="Shopy - eCommerce Bootstrap 5 Template">
+    <!-- title -->
+    <title>Shopy - eCommerce Bootstrap 5 Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://www.pxdraft.com/demo/shopy/assets/img/favicon.ico">
+    <!-- CSS Template -->
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/template/shopy/partials/header/_header-04.html">
+    <link rel="stylesheet" href="/template/shopy/partials/_skippy.html">
+    <link rel="stylesheet" href="/template/shopy/partials/_all-popups.html">
+    <a href="/template/shopy/partials/header/_header-04.html"></a>
+ </head>
 <header class="header-main @@HeaderClass header-option-3">
     <div class="header-top pt-3 pb-2 py-md-2 py-lg-4">
         <div class="@@ContainerClass">
@@ -128,14 +147,6 @@
             <!-- Menu -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
-                    <li class="dropdown dropdown-full nav-item">
-                        <a href="#" class="nav-link">Demos</a>
-                        <label class="px-dropdown-toggle mob-menu"></label>
-                        <div class="dropdown-menu dropdown-mega-menu py-0">
-                            @@include('header/_home_demo_menu.html', {
-                                "path": "..",
-                            })
-                        </div>
                     </li>
                     <li class="dropdown dropdown-full nav-item">
                         <a href="#" class="nav-link">Latest</a>
@@ -473,20 +484,11 @@
                         <a href="#" class="nav-link">Pages</a>
                         <label class="px-dropdown-toggle mob-menu"></label>
                         <ul class="dropdown-menu left shadow-lg">
-                            <li><a class="dropdown-item" href="../pages/about.html">About</a></li>
-                            <li><a class="dropdown-item" href="../pages/faq.html">FAQ's</a></li>
-                            <li><a class="dropdown-item" href="../pages/policy.html">Policy</a></li>
-                            <li><a class="dropdown-item" href="../pages/support.html">Support</a></li>
-                            <li><a class="dropdown-item" href="../pages/support-topic.html">Support Topic</a></li>
-                            <li><a class="dropdown-item" href="../pages/contact-us.html">Contact Us</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown nav-item">
-                        <a href="#" class="nav-link">Blog</a>
-                        <label class="px-dropdown-toggle mob-menu"></label>
-                        <ul class="dropdown-menu left shadow-lg">
-                            <li><a class="dropdown-item" href="../blog/blog.html">Blog</a></li>
-                            <li><a class="dropdown-item" href="../blog/blog-single.html">Blog Single</a></li>
+                            <li><a class="dropdown-item" href="../pages/about.php">About</a></li>
+                            <li><a class="dropdown-item" href="../pages/faq.php">FAQ's</a></li>
+                            <li><a class="dropdown-item" href="../pages/policy.php">Policy</a></li>
+                            <li><a class="dropdown-item" href="../pages/support.php">Support</a></li>
+                            <li><a class="dropdown-item" href="../pages/contact-us.php">Contact Us</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -1,66 +1,50 @@
 <!-- Ask Form -->
 <?php
-@@include('./popups/_ask-form-popup.html', {
-    "path": "..",
-})
+ include("/wamp64/www/Fonice/template/shopy/partials/popups/_ask-form-popup.php");
 ?>
 <!-- End Ask Form -->
 
 <!-- Header Search -->
 <?php
-@@include('./popups/_header-search-popup.html', {
-    "path": "..",
-})
+include("/wamp64/www/Fonice/template/shopy/partials/popups/_header-search-popup.php");
 ?>
 <!-- End Header Search -->
 
 
 <!-- Header Side Search -->
 <?php
-@@include('./popups/_header-search-side-popup.html', {
-    "path": "..",
-})
+include("/wamp64/www/Fonice/template/shopy/partials/popups/_header-search-side-popup");
 ?>
 <!-- End Header Side Search -->
 
 <!-- Login Popup  -->
 <?php
-@@include('./popups/_login-popup.html', {
-    "path": "..",
-})
+include("/wamp64/www/Fonice/template/shopy/partials/popups/_login-popup.php");
 ?>
 <!-- End Login Popup  -->
 
 <!-- Mini Cart  -->
 <?php
-@@include('./popups/_mini-cart-popup.html', {
-    "path": "..",
-})
+include("/wamp64/www/Fonice/template/shopy/partials/popups/_mini-cart-popup.php");
 ?>
 <!-- End Mini Cart  -->
 
 <!-- Quick View  -->
 <?php
-@@include('./popups/_quick-view-popup.html', {
-    "path": "..",
-})
+include("/wamp64/www/Fonice/template/shopy/partials/popups/_quick-view-popup.php");
 ?>
 <!-- End Quick View  -->
 
 
 <!-- Sipping Popup  -->
 <?php
-@@include('./popups/_shipping-popup.html', {
-    "path": "..",
-})
+include("/wamp64/www/Fonice/template/shopy/partials/popups/_shipping-popup.php");
 ?>
 <!-- End Sipping Popup  -->
 
 
 <!-- Size Chart  -->
 <?php
-@@include('./popups/_size-chart-popup.html', {
-    "path": "..",
-})
+include("/wamp64/www/Fonice/template/shopy/partials/popups/_size-chart-popup.php");
 ?>
 <!-- End Size Chart  -->

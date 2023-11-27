@@ -1,23 +1,15 @@
 <!doctype html>
 <html lang="zxx">
-
-<head>
-    @@include('./_head.html', {
-    "path": "../../assets",
-    "title": "Shopy - eCommerce Bootstrap 5 Template"
-    })
-</head>
-
 <body>
     <!-- Skippy & Prload -->
-    @@include('./_skippy.html',{
+    <!-- @@include('./_skippy.html',{
     "path": "",
-    })
+    }) -->
     <!-- Edn Skippy & Prload -->
     <!-- Size Chart  -->
-    @@include('./_all-popups.html', {
+    <!-- @@include('./_all-popups.html', {
     "path": "..",
-    })
+    }) -->
     <!-- End Size Chart  -->
     <!-- 
     ========================
@@ -28,12 +20,9 @@
         <!-- heder height -->
         <div class="header-height-bar"></div>
         <!-- Header -->
-        @@include('./header/_header-01.html', {
-        "path": "./html",
-        "imgPath": "../../assets",
-        "HeaderClass": "bg-mode-re header-light fixed-top header-height",
-        "ContainerClass": "container",
-        })
+        <?php
+                require dirname(__DIR__)."/home/nav/main-header.php";
+            ?>
         <!-- End Header -->
         <!-- Main -->
         <main>
@@ -243,11 +232,9 @@
             
         </main>
         <!-- End Main -->
-        <!-- Footer -->
-        @@include('./footer/_footer-01.html', {
-        "path": ".",
-        "imgPath": "../../assets",
-        })
+        <?php
+         require dirname(__DIR__)."/home/footer/_footer-04.php";
+        ?>
         <!-- End Footer -->
     </div>
     <!-- 
@@ -256,9 +243,9 @@
     ========================
     -->
     <!-- script start -->
-    @@include('./_scripts.html', {
-    "path": "../../assets",
-    })
+    <?php
+    require dirname(__DIR__)."/template/shopy/html/home/footer/_scripts.php";
+    ?>
     <!-- End script start -->
 </body>
 
